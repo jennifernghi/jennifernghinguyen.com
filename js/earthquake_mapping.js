@@ -93,6 +93,7 @@ function init(){
     var lat_input = document.getElementById('lat_search_field');
     var long_input = document.getElementById('long_search_field');
     var search_button = document.getElementById('search');
+    var clear_button = document.getElementById('clear_button');
     name_radio.checked = true;
     
     disableLatLongFields(name_radio);
@@ -114,6 +115,21 @@ function init(){
             lat_text = lat_input.value.trim();
             long_text = long_input.value.trim();
             console.log('lat ' + lat_text + ' long ' + long_text);
+        }
+    };
+
+    clear_button.onclick = function(){
+        if(address_input.value.localeCompare("")!=0){
+             address_input.value ="";
+            
+        }
+        
+        if(lat_input.value.localeCompare("")!=0){
+            lat_input.value =""; 
+       }
+
+       if(long_input.value.localeCompare("")!=0){
+            long_input.value =""; 
         }
     };
     
