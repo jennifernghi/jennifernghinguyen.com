@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>earthquake_mapping</title>
+    <!--bootrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <!--jquery-->	
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"	></script>	
 
@@ -12,12 +18,73 @@
     <!--mapbox-->
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
-    
     <script src="../js/earthquake_mapping.js"></script>
+    <style>
+       #controller{
+           min-height: 120px;
+           width: 100%;
+           margin-bottom: 10px;
+           padding-left: 40px;
+           padding-top: 5px;
+       }
+       #address_search_row, #long_lat_search_row, #buttons{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 10px;
+
+       }
+       #canvas_map{
+           margin-left: 10px;
+       }
+       input{
+           height: 30px;
+       }
+       button{
+           margin-right: 10px;
+       }
+       #address_search_field{
+           width: 260px;
+           margin-left: 10px;
+       }
+       #lat_search_field, #long_search_field{
+           width: 160px;
+           margin-left: 10px;
+       }
+       .disabledbutton {
+            pointer-events: none;
+            opacity: 0.4;
+        }
+    </style>
     
 </head>
 
 <body>
+    <div id="controller">
+        <form id="map_search_form">
+                <div class="form-group row" id="address_search_row">
+                    <input class="form-check-input" type="radio" name="address_search_radio" id="address_search" value="0">
+                    <label class="form-check-label" for="address_search">
+                      search by address, city
+                    </label>
+                    <input type="text" class="form-control" id="address_search_field" aria-describedby="address" for="address_search" placeholder="Address, city or country">
+                </div>
+                <div class="form-group row" id="long_lat_search_row">
+                    <input class="form-check-input" type="radio" name="long_lat_search_radio" id="long_lat_search" value="1">
+                    <label class="form-check-label" for="long_lat_search">
+                      search by latitude and longtitude
+                    </label>
+                    <input type="text" class="form-control" id="lat_search_field" aria-describedby="lat" for="long_lat_search" placeholder="Latitude">
+                    <input type="text" class="form-control" id="long_search_field" aria-describedby="long" for="long_lat_search" placeholder="Longtitude">
+                </div>
+                <div class="form-group row" id="buttons">
+                    <button type="button" class="btn btn-primary btn-sm" id="search">Search</button>
+                    <button type="button" class="btn btn-secondary btn-sm" id="clear_button">Clear</button>
+                 </div>
+        </form>
+    </div>
+    <div id="map_container"></div>
+    
 
 </body>
 </html>
