@@ -1,0 +1,109 @@
+.social_div {
+    background: #494b4f;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social_div ul {
+    list-style: none;
+    /*transform: translate(-40%, 100%);*/
+
+}
+
+.social_div ul li {
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    cursor: pointer;
+    /*border-radius: 50%;
+    border: 1px solid #D8E2DC;*/
+    transition: all 0.5s ease;
+    display: inline;
+
+}
+
+.social_div ul li .fa {
+    color: #D8E2DC;
+    transition: all 0.5s ease;
+}
+
+/*facebook*/
+.social_div ul li:hover.facebook {
+    /*border: 1px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;*/
+    transition: all 0.5s ease;
+}
+
+.social_div ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+/*twitter*/
+.social_div ul li:hover.twitter {
+    /*border: 1px solid #00aced;
+    box-shadow: 0 0 15px #00aced;*/
+    transition: all 0.5s ease;
+}
+
+.social_div ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+/* github */
+.social_div ul li:hover.github {
+    /*border: 1px solid #1a1a1a;
+    box-shadow: 0 0 15px #1a1a1a;*/
+    transition: all 0.5s ease;
+}
+
+.social_div ul li:hover .fa-github {
+    color: #1a1a1a;
+    text-shadow: 0 0 15px #1a1a1a;
+    transition: all 0.5s ease;
+}
+
+/* google */
+.social_div ul li:hover.email {
+    /*border: 1px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;*/
+    transition: all 0.5s ease;
+}
+
+.social_div ul li:hover .fa-envelope {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+}
+
+/* linked in */
+.social_div ul li:hover.linkedin {
+    /*border: 1px solid #2162a6;
+    box-shadow: 0 0 15px #2162a6;*/
+    transition: all 0.5s ease;
+}
+
+.social_div ul li:hover .fa-linkedin {
+    color: #2162a6;
+    text-shadow: 0 0 15px #2162a6;
+    transition: all 0.5s ease;
+}
+
+.social_div span{
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+}

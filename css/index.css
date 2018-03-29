@@ -1,0 +1,99 @@
+body, html {
+    height: 100%;
+
+}
+
+.home_div {
+
+    background-image: url("https://image.ibb.co/meCdCG/pexels_photo_268976.jpg");
+   
+    height: 100%;
+    position: relative;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.portfolio_div{
+    /* Full height */
+    height: 100%;
+    position: relative;
+}
+
+.blog_div{
+    /* Full height */
+    height: 100%;
+    position: relative;
+}
+
+.about_me_div{
+    /* Full height */
+    height: 100%;
+    position: relative;
+}
+.introduction{
+    height: 82%;
+    position: relative;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+span {
+    color: white;
+    font-size: 18px;
+
+}
+
+#greeting_header{
+    font-size: 45px;
+    display:block;
+
+}
+
+#name{
+    font-size: 45px;
+
+}
+
+#greeting_content{
+    font-size: 25px;
+    display:block;
+
+}
+
+#greeting_hastags{
+    display:block;
+    font-size: 35px;
+    text-align: center;
+}
+
+.current_status{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toPortforlio {
+    height:10%;
+
+    position:absolute;
+    bottom:0px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+
+.toPortforlio > i {
+    font-size:80px;
+    color: white;
+}
+

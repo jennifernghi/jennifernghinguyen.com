@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Quarz 947 Light";
+    src:
+            url("/assets/fonts/Quarz 974 Light/Quarz 974 Light.woff") format("woff"),
+            url("/assets/fonts/Quarz 974 Light/Quarz 974 Light.otf") format("opentype"),
+            url("/assets/fonts/Quarz 974 Light/Quarz 974 Light.svg") format("svg"),
+            url("/assets/fonts/Quarz 974 Light/Quarz 974 Light.eot") format("eot"),
+}
