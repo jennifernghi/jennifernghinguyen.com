@@ -90,21 +90,6 @@ span {
    
     
 }
-.toPortforlio {
-    height:10%;
-
-    position:absolute;
-    bottom:0px;
-    display: inline-block;
-    text-align: center;
-
-}
-
-
-.toPortforlio > i {
-    font-size:80px;
-    color: white;
-}
 
 #particles-js{
     width: 100%;
@@ -112,3 +97,27 @@ span {
     max-height: inherit;
 }
 
+/*blinking cursor*/
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    font-style: bold;
+    font-size: 20pt;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
