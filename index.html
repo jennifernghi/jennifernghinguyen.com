@@ -7,6 +7,8 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <!--greate vibe font-->
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Petit+Formal+Script" rel="stylesheet">
+<!--IBM plex mono font-->
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 <!--bootrap-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -20,20 +22,27 @@
 	
 <!--jquery-->	
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"	></script>
+
+  <!--p5 js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 	
 <!--css files-->	
 <link href="css/menu.css" rel="stylesheet">
 <link href="css/Social.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
+
 	
 <!--js-->
 <script src="js/index.js"></script>	
+<script src="js/particle_script.js"></script>	
+<!--<script src="js/terrain.js"></script>	-->
 
 
-<script language="javascript" type="text/javascript" 
-  src="scripts_headers/scripts_headers.txt"></script>
-	
-</head>
+
 
 <body>
 
@@ -48,13 +57,6 @@
             </li>
             <li>
                 <a href="#">About Me</a>
-
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-            <li>
-                <a href="#">Tools</a>
 
             </li>
             <li>
@@ -73,12 +75,12 @@
         <div class="current_status">
             <img src="https://image.ibb.co/cqerXG/nghi_logo.png" width="160px" height="160px"/>
         </div>
-        <span id="greeting_header"> Hi, I am <span id="name"></span>.</span><br>
-        <span id="greeting_content"> I am a senior student at San Jose State University, computer science major. I am going to graduate in December 2018; therefore,
-            I am seeking for a software engineering internship in summer 2018 and a full-time employment after graduation.
-            Scroll down to check out my portfolio and my computer science related blogs.
-            Also, if you are looking for a project partnership or you just want to chat, contact me here.</span><br>
-        <span id="greeting_hastags"></span>
+        <!--<canvas data-processing-sources="sketches/terrain/terrain.pde"></canvas>-->
+        <div id="particles-js"></div>
+        <span id="greeting_header"> JenniferNghiNguyen$ I am a computer science student. Welcome to my portfolio website. <span id="name"></span>.</span><br>
+        <!--<span id="greeting_content"> </span><br>
+        <span id="greeting_hastags"></span>-->
+       
     </div>
     <div class="toPortforlio">
         <i class="fa fa-angle-down"></i>

@@ -1,8 +1,9 @@
 $(document).ready(function () {
 	'use strict';
-    changeHasTags();
-    changeNameStyle();
+    //changeHasTags();
+    //changeNameStyle();
     fadeOnScrollTop(".home_div");
+        
 });
 
 function updateText(container, text) {

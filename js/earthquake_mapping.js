@@ -11,7 +11,7 @@ var zoomlv = 1;
 var earthquakes;
 
 var w = 1024;
-var h = 500;
+var h = 700;
 
 var address_text= "";
 var lat_text="";

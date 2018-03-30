@@ -8,6 +8,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 
 }
 
@@ -18,8 +19,8 @@
 }
 
 .social_div ul li {
-    width: 60px;
-    height: 60px;
+    /*width: 60px;
+    height: 60px;*/
     line-height: 50px;
     margin-left: 5px;
     margin-right: 5px;
@@ -29,6 +30,7 @@
     border: 1px solid #D8E2DC;*/
     transition: all 0.5s ease;
     display: inline;
+    font-size: 20pt;
 
 }
 
