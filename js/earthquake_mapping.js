@@ -1,13 +1,9 @@
 var mapping;
 
-var clat = 0;
-var clong = 0;
+var clat;
+var clong;
+var zoomlv;
 
-//10.8231° N, 106.6297° E
-//var lat = 10.8231;
-//var long = 106.6297;
-
-var zoomlv = 1;
 var earthquakes;
 
 var w = 1024;
@@ -17,6 +13,16 @@ var address_text= "";
 var lat_text="";
 var long_text="";
 
+////////////////////
+var name_radio;
+var lat_long_radio;
+var address_input;
+var lat_input;
+var long_input;
+var search_button;
+var clear_button;
+//////////////////
+/*begin p5 processing  */
 // https://en.wikipedia.org/wiki/Web_Mercator
 function merX(zoomlv, long){
     long = radians(long);
@@ -33,14 +39,34 @@ function merY(zoomlv, lat){
     var c = PI - log(b);
     return a * c;
 }
-
+function initValues(clatV, clongV, zoomlvV){
+    clat = clatV;
+    clong = clongV;
+    zoomlv = zoomlvV;
+}
+function isDefaultLink(){
+    if (url.indexOf('?') == -1){
+        return true;
+    }else{
+        return false;
+    }
+}
+$( document ).ready(function() {  
+    console.log("document ready");
+    init();
+    
+});
 function preload(){
-
+    console.log("in preload");
+    initValues(0,0,1);
+    console.log("clat" + clat);
+    console.log("clong" + clong);
     mapping = loadImage('https://api.mapbox.com/styles/v1/mapbox/streets-v10/static/'+clong+','+clat+','+zoomlv+',0,0/'+w+'x'+h+'?access_token=pk.eyJ1IjoiamVubmlmZXJuZ2hpIiwiYSI6ImNqZjd6czNobDBreXY0ZW9od3lhZHNuN2EifQ.cCiKaXITQTikj17YR2-seg');
     earthquakes = loadStrings('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv');
     console.log(earthquakes.length);
 }
 function setup(){
+    console.log("in setup");
     var canvas = createCanvas(w, h);
     canvas.parent('map_container');
     canvas.id('canvas_map');
@@ -77,23 +103,25 @@ function setup(){
         fill('#ff4949');
         tint(255, 128);
         //ellipse(x, y, 1.2*mag, 1.2*mag);
-        ellipse(x, y, 7*d, 7*d);
+        ellipse(x, y, 5*d, 5*d);
     }
     
 }
 
-$( document ).ready(function() {    
-    init();
-});
+/*end p5 processing  */
+
+function getElement(){
+     name_radio = document.getElementById('address_search');
+     lat_long_radio = document.getElementById('long_lat_search');
+     address_input = document.getElementById('address_search_field');
+     lat_input = document.getElementById('lat_search_field');
+     long_input = document.getElementById('long_search_field');
+     search_button = document.getElementById('search');
+     clear_button = document.getElementById('clear_button');
+}
 
 function init(){
-    var name_radio = document.getElementById('address_search');
-    var lat_long_radio = document.getElementById('long_lat_search');
-    var address_input = document.getElementById('address_search_field');
-    var lat_input = document.getElementById('lat_search_field');
-    var long_input = document.getElementById('long_search_field');
-    var search_button = document.getElementById('search');
-    var clear_button = document.getElementById('clear_button');
+    getElement();
     name_radio.checked = true;
     
     disableLatLongFields(name_radio);
@@ -107,6 +135,12 @@ function init(){
     latInputOnInput(lat_input);
     longInputOnInput(long_input);
 
+    searchButtonInit(search_button);
+    clearButtonInit(clear_button);
+       
+}
+
+function searchButtonInit(search_button){
     search_button.onclick = function(){
         if(name_radio.checked){
             address_text = address_input.value.trim();
@@ -115,9 +149,25 @@ function init(){
             lat_text = lat_input.value.trim();
             long_text = long_input.value.trim();
             console.log('lat ' + lat_text + ' long ' + long_text);
+            clat = lat_text;
+            clong = long_text;
+            zoomlv = 2;/////change it 
+            var url = window.location.href;   
+            console.log('url: ' + url); 
+            if (url.indexOf('?') == -1){
+                console.log('new url');
+               url += '?clat='+clat+'&clong='+clong+'&zoomlv='+zoomlv;
+            }else{
+                console.log('? exits');
+            }
+            window.location.href = url;
+            
+            console.log('url: ' + url);
         }
     };
+}
 
+function clearButtonInit(clear_button){
     clear_button.onclick = function(){
         if(address_input.value.localeCompare("")!=0){
              address_input.value ="";
@@ -132,10 +182,7 @@ function init(){
             long_input.value =""; 
         }
     };
-    
-    
 }
-
 function disableLatLongFields(){ 
     $("#lat_search_field").addClass("disabledbutton");
     $("#long_search_field").addClass("disabledbutton");
