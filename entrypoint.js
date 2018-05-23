@@ -6,4 +6,4 @@ const path = require('path');
 const app = express();
 app.use(express.static("public"));
 
-app.listen(8080);
+app.listen(80);
