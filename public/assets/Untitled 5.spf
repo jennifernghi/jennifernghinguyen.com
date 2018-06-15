@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>jennifernghinguyen_DB</string>
+			<key>host</key>
+			<string>jennifernghinguyen.c7qph6ceag0t.us-west-1.rds.amazonaws.com</string>
+			<key>kcid</key>
+			<string>5474480238832494467</string>
+			<key>name</key>
+			<string>jennifernghinguyen</string>
+			<key>port</key>
+			<integer>3306</integer>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>jennifernghi</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8mb4</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK4HCBUWFxgZHSQpLTE0OFUkbnVsbNMJ
+			CgsMEBRXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6MNDg+AAoAD
+			gASjERITgAWABoAIgA1UdHlwZVRyb3dzVGtleXNfECZTZWxlY3Rp
+			b25EZXRhaWxUeXBlUHJpbWFyeUtleWVkRGV0YWlsc9MJCgsaGxyg
+			oIAH0h4fICFaJGNsYXNzbmFtZVgkY2xhc3Nlc18QE05TTXV0YWJs
+			ZURpY3Rpb25hcnmjICIjXE5TRGljdGlvbmFyeVhOU09iamVjdNIK
+			CyUooiYngAmAC4AM0gsqKyxZTlMuc3RyaW5ngApacHJvamVjdF9p
+			ZNIeHy4vXxAPTlNNdXRhYmxlU3RyaW5noy4wI1hOU1N0cmluZ9IL
+			KiszgApYc2tpbGxfaWTSHh81Nl5OU011dGFibGVBcnJheaM1NyNX
+			TlNBcnJhedIeHyI5oiIjXxAPTlNLZXllZEFyY2hpdmVy0Tw9VGRh
+			dGGAAQAIABEAGgAjAC0AMgA3AEYATABTAFsAZgBtAHEAcwB1AHcA
+			ewB9AH8AgQCDAIgAjQCSALsAwgDDAMQAxgDLANYA3wD1APkBBgEP
+			ARQBFwEZARsBHQEiASwBLgE5AT4BUAFUAV0BYgFkAW0BcgGBAYUB
+			jQGSAZUBpwGqAa8AAAAAAAACAQAAAAAAAAA+AAAAAAAAAAAAAAAA
+			AAABsQ==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {775, 651}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>select count(*) as num_of_project from projects;
+
+select *
+from projects as p;
+
+{
+	
+				'project_name': 'jennifernghinguyen.com',
+				'description': '- This project is a personal website which beautifully demonstrate my 										resume and portfolios.
+										- Technology: Mysql, HTML, CSS, JavaScript, NodeJs, ParticleJs, 												TypedJs, AWS
+										- Individual project',
+				'start': 'May 2018',
+				'end':'Present',
+				'images':{
+									{
+										'link': 'https://image.ibb.co/i3daXd/Screen_Shot_2018_05_29_at_6_47_33_PM.png',
+										'credit':'Null'
+									}
+							 },
+				'skills':{
+									{ 
+										'skill_name': 'HTML',
+										'skill_color': '#72ffd4'
+									},
+									{ 
+										'skill_name': 'CSS',
+										'skill_color': '#b407ba'
+									},
+									{ 
+										'skill_name': 'Javascript',
+										'skill_color': '#4b40ad'
+									},
+									{ 
+										'skill_name': 'NodeJs',
+										'skill_color': '#327738'
+									},
+									{ 
+										'skill_name': 'Mysql',
+										'skill_color': '#7bd12b'
+									},
+									{ 
+										'skill_name': 'AWS',
+										'skill_color': '#e1ff05'
+									},
+									{ 
+										'skill_name': 'TypedJs',
+										'skill_color': '#319caa'
+									},
+									{ 
+										'skill_name': 'ParticleJs',
+										'skill_color': '#162287'
+									}
+							 },
+				'videos':[test],
+				'documentations':{
+												{
+													'doc_title': 'test title',
+													'doc_link':'test link'
+												}
+										 }
+}
+
+select p. project_id, img.link, img.credit
+from projects as p , project_images as p_img, images as img
+where p.project_id = p_img.project_id and
+		 p_img.image_id = img.image_id and p.project_id = 1;
+		 
+		 
+select sk.skill_name, sk.skill_color
+from projects as p , project_skills as p_sk, skills as sk
+where p.project_id = p_sk.project_id and
+		 p_sk.skill_id = sk.skill_id and p.project_id = 1;
+		 
+select vid.link
+from projects as p , project_videos as p_vid, videos as vid
+where p.project_id = p_vid.project_id and
+		 p_vid.video_id = vid.video_id and p.project_id = 1;		 
+		 
+select doc.doc_title, doc.link
+from projects as p , project_documentations as p_doc, documentations as doc
+where p.project_id = p_doc.project_id and
+		 p_doc.doc_id = doc.doc_id and p.project_id = 1;	
+		 
+#resume		 
+select full_name, introduction, objective from resume;	 
+
+#education
+select e.school_name, e.degree, e.start_term, e.end_term, e.GPA, img.link, img.credit
+from educations as e, images as img
+where e.education_icon_id = img.image_id;
+
+#exp
+select exp.exp_title, exp.start, exp.end, exp.exp_description, img.link, img.credit
+from experiences as exp, images as img
+where exp.exp_icon_id = img.image_id
+order by exp.exp_id desc;
+
+#achievement
+select achievement_title, year, achievement_description, link, credit
+from achievement as a, images as img
+where a.achievement_icon_id = img.image_id
+order by a.achievement_icon_id desc
+;
+
+#languages
+select language, fluency_point, link, credit
+from languages as l, images as img
+where l.lang_icon_id = img.image_id;
+
+#projects
+select name, description, start, end from projects;
+
+#skills
+select skill_name, skill_color, skill_point, link, credit 
+from resume, resume_skills as rs, skills as s, images as img
+where resume.resume_id = rs.resume_id and
+		 rs.skill_id = s.skill_id and
+		 s.skill_icon_id = img.image_id;
+		 
+#contacts
+select contact_type, contact_content, link, credit
+from contacts, images as img
+where contacts.contact_icon_id = img.image_id;
+
+
+</string>
+			<key>table</key>
+			<string>project_skills</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>167</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>select name, description, start, end 
+from projects as p, skills as sk, project_skills as p_sk
+where p.project_id = p_sk.project_id and
+		p_sk.skill_id = sk.skill_id</string>
+		<string>select achievement_title, year, achievement_description, link, credit
+from achievement as a, images as img
+where a.achievement_icon_id = img.image_id
+order by a.achievement_icon_id desc</string>
+		<string>select contact_type, contact_content, link, credit
+from contacts, images as img
+where contacts.contact_icon_id = img.image_id</string>
+		<string>select *
+from contacts, images as img
+where contacts.contact_icon_id = img.image_id</string>
+		<string>select *
+from contacts</string>
+		<string>select skill_name, skill_color, skill_point, link, credit 
+from resume, resume_skills as rs, skills as s, images as img
+where resume.resume_id = rs.resume_id and
+		 rs.skill_id = s.skill_id and
+		 s.skill_icon_id = img.image_id</string>
+		<string>select skill_name, skill_color, skill_point, link 
+from resume, resume_skills as rs, skills as s, images as img
+where resume.resume_id = rs.resume_id and
+		 rs.skill_id = s.skill_id and
+		 s.skill_icon_id = img.image_id</string>
+		<string>select skill_name, skill_color, skill_point, link 
+from resume, resume_skills as rs, skills as s, images as img
+where resume.resume_id = rs.resume_id and
+		 rs.skill_id = s.skill_id and
+		 r.skill_icon_id = img.image_id</string>
+		<string>select * 
+from resume, resume_skills as rs, skills as s
+where resume.resume_id = rs.resume_id and
+		 rs.skill_id = s.skill_id</string>
+		<string>select * 
+from resume, resume_skills as rs, skills as s
+where resume.resume_id = rs.resume.id and
+		 rs.skill_id = s.skill_id</string>
+		<string>select * 
+from resume, resume_skills as rs, skill as s
+where resume.resume_id = rs.resume.id and
+		 rs.skill_id = s.skill_id</string>
+		<string>select * from resume_skills</string>
+		<string>select name, description, start, end from projects</string>
+		<string>select * from projects</string>
+		<string>select language, fluency_point, link, credit
+from languages as l, images as img
+where l.lang_icon_id = img.image_id</string>
+		<string>select `language`, fluency_point, link, credit
+from languages as l, images as img
+where l.lang_icon_id = img.image_id</string>
+		<string>select * 
+from languages as l, images as img
+where l.lang_icon_id = img.image_id</string>
+		<string>select * from languages</string>
+		<string>select achievement_title, `year`, achievement_description, link, credit
+from achievement as a, images as img
+where a.achievement_icon_id = img.image_id
+order by a.achievement_icon_id desc</string>
+		<string>select *
+from achievement as a, images as img
+where a.achievement_icon_id = img.image_id
+order by a.achievement_icon_id desc</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.6.39-log</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
