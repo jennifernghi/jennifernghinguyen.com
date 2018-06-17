@@ -16,9 +16,9 @@ function fadeOnScrollTop(div_id) {
 
 function typedjs(){
     var typed2 = new Typed('#name', {
-        strings: ['I am a computer science student. Welcome to my portfolio website.', 'Scroll down to view my resume and my portfolio'],
-        typeSpeed: 50,
-        backSpeed: 40,
+        strings: ['Nghi {Jennifer} M. Nguyen'],
+        typeSpeed: 70,
+        backSpeed: 100,
         cursorChar: '|',
         smartBackspace: true,
         loop: true

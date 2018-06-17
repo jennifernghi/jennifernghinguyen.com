@@ -1,101 +1,9 @@
 body, html {
     height: 100%;
-
+    min-width: 700px;
 }
 
-.home_div {
 
-   /*background-image: url("https://image.ibb.co/meCdCG/pexels_photo_268976.jpg");*/
-   
-    height: 100%;
-    position: relative;
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #050808;
-
-
-}
-
-.portfolio_div{
-    /* Full height */
-    height: 100%;
-    position: relative;
-}
-
-.blog_div{
-    /* Full height */
-    height: 100%;
-    position: relative;
-}
-
-.about_me_div{
-    /* Full height */
-    height: 100%;
-    position: relative;
-}
-.introduction{
-    height: 82%;
-    position: relative;
-    text-align: left;
-    /*padding-left: 5%;
-    padding-right: 5%;*/
-
-}
-
-span {
-    color: white;
-    font-size: 18px;
-
-}
-
-#greeting_header{
-    font-size: 20px;
-    display:block;
-    margin-top: 10px;
-    font-family: 'IBM Plex Mono', monospace;
-    padding-left: 10px;
-    background-color: transparent;
-    height: 10%;
-}
-
-#name{
-    font-size: 20px;
-
-}
-
-/*#greeting_content{
-    font-size: 25px;
-    display:block;
-
-
-}
-
-#greeting_hastags{
-    display:block;
-    font-size: 35px;
-    text-align: center;
-
-}*/
-
-.current_status{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-    
-}
-
-#particles-js{
-    width: 100%;
-    height: 70%;
-    /*max-height: inherit;*/
-}
 
 /*blinking cursor*/
 .typed-cursor {
@@ -121,3 +29,73 @@ span {
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+#introduction{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://image.ibb.co/jqLgqJ/computer_desk2.jpg");
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 116, 219,.6);
+    position: relative;
+}
+
+#menu  {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+}
+
+#intro_content{
+    /*background-color: blueviolet;*/
+    
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+}
+
+div#text_all{
+    margin: auto;
+    width: 70%;
+    height: 500px;
+    position: relative;
+
+    /*background-color: aqua;*/
+}
+
+div#text_all span {
+    margin: 0;
+    position: absolute;       
+    top: 50%;                       
+    transform: translate(0, -50%);
+    color: white;
+    
+}
+
+div#text_all span#name{
+    font-size: 35pt; 
+    font-weight: bold;
+    
+}
+
+div#text_all span#intro{
+    margin-top: 20px;
+    font-size: 20pt; 
+    top: 70%;                       
+    transform: translate(0, -70%);
+}
+
+
+
+
+
+
+
+
+
