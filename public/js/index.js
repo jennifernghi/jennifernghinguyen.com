@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	'use strict';
     fadeOnScrollTop(".home_div");
-    typedjs();
+    //typedjs();
         
 });
 
@@ -13,14 +13,14 @@ function fadeOnScrollTop(div_id) {
     });
 
 }
-
+/*
 function typedjs(){
     var typed2 = new Typed('#name', {
         strings: ['Nghi {Jennifer} M. Nguyen'],
         typeSpeed: 70,
         backSpeed: 100,
-        cursorChar: '|',
+        cursorChar: '',
         smartBackspace: true,
         loop: true
       });
-}
+}*/

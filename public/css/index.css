@@ -1,101 +1,50 @@
+@import url("floating_button.css");
+:root{
+    --height: 100vh; /* For 100% screen height */
+    --width:  100vw; /* For 100% screen width */
+    --social-height: 500px;
+}
 body, html {
-    height: 100%;
+    height: var(--height);
     min-width: 700px;
 }
-
-
-
-/*blinking cursor*/
-.typed-cursor {
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-    font-style: bold;
-    font-size: 20pt;
+#introduction, #resume, #projects, #social{
+    width: var(--width);
+    
+    padding: 0;
 }
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@-webkit-keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@-moz-keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
 #introduction{
+    min-height: var(--height);
+}
+#resume{
+    background-color: white;
+    min-height: var(--height);
+}
+#projects{
+    background-color: yellow;
+    min-height: var(--height);
+}
+#social{
+    background-color: blueviolet;
+    min-height: var(--social-height);
+}
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .row.no-gutters > [class^="col-"],
+  .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .row{
     width: 100%;
-    height: 100%;
-    background-image: url("https://image.ibb.co/jqLgqJ/computer_desk2.jpg");
-    background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(0, 116, 219,.6);
-    position: relative;
+    padding: 0;
+    background-color: #1b1c1c;
 }
 
-#menu  {
-    width: 100%;
-    height: 70px;
-    position: absolute;
-    z-index: 1;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
+.main-contain{
+    background-color: aqua;
+    padding: 0;
 }
-
-#intro_content{
-    /*background-color: blueviolet;*/
-    
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    z-index: 1;
-    top: 70px;
-}
-
-div#text_all{
-    margin: auto;
-    width: 70%;
-    height: 500px;
-    position: relative;
-
-    /*background-color: aqua;*/
-}
-
-div#text_all span {
-    margin: 0;
-    position: absolute;       
-    top: 50%;                       
-    transform: translate(0, -50%);
-    color: white;
-    
-}
-
-div#text_all span#name{
-    font-size: 35pt; 
-    font-weight: bold;
-    
-}
-
-div#text_all span#intro{
-    margin-top: 20px;
-    font-size: 20pt; 
-    top: 70%;                       
-    transform: translate(0, -70%);
-}
-
-
-
-
-
-
-
-
-

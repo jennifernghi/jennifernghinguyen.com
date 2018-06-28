@@ -1,0 +1,129 @@
+:root{
+    --height: 100vh; /* For 100% screen height */
+    --width:  100vw; /* For 100% screen width */
+    --menu-height: 60px;
+    --intro_content-height: calc(var(--height) - var(--menu-height));
+}
+
+/**content**/
+#intro_content{
+    width: var(--width);
+    min-height: var(--intro_content-height);
+}
+
+.intro-content, .img-content{
+    background-color: aqua;
+    height: var(--intro_content-height);
+    top: var(--menu-height);
+    color: white;
+    
+}
+
+.intro-content{
+    background-color: #262829;
+    position: relative;
+    
+}
+.intro-content p{
+    width: inherit;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+   position: absolute;  
+   top: 45%;                        
+   transform: translate(0, -45%);
+   color: white;
+   font-size:2.1vw;
+
+}
+
+.intro-content #intro_btn{
+    width: inherit;
+    margin-left: 40px;
+    position: absolute;              
+    top: 70%;                         
+    transform: translate(0, -70%);
+    background-color: #262829;
+    padding-right: 30px;
+    
+}
+
+
+.img-content{
+    background-color: #1b1c1c;
+   
+}
+
+#intro_btn{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#intro_btn button{
+    height: 40px;
+    border-radius: 25px;
+    background-color: #262829;
+    width:200px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#btn_hire {
+    border: 3px solid red;
+    color: red;
+    margin-right: 20px;
+}
+
+
+#btn_resume {
+    border: 3px solid greenyellow; 
+    color: greenyellow;
+    
+}
+
+#intro_btn button:hover{
+    background-color: white;
+}
+
+/*****menu****/
+
+#menu  {
+    width: var(--width);
+    height: var(--menu-height);
+    position: absolute;
+    z-index: 1;
+    
+}
+
+
+nav{
+    top:0;
+    margin: 0;
+    padding: 0;
+    color: white;
+    width: var(--width);
+    min-height: var(--menu-height);
+    
+}
+
+
+.navbar-nav li a{
+    font-size: 14pt;
+}
+
+.navbar-nav li{
+    padding-right: 30px;
+    float: right;
+}
+
+.navbar-brand img{
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navbar-expand-lg{
+    text-align: center;
+}

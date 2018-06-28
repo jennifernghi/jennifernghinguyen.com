@@ -1,0 +1,88 @@
+:root{
+    --floating-button-width:60px;
+    --floating-button-height:60px;
+    --floating-button-small-width:40px;
+    --floating-button-small-width:40px;
+}
+#floating_container img{
+    height: 40px; 
+    width: 40px; 
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    padding:0;
+    margin:auto;
+    display: block;
+}
+#floating_container{
+    position: fixed;
+    width:70px;
+    height: 70px;
+    bottom: 30px;
+    right: 30xp;
+    z-index: 50;     
+}
+
+#floating_container:hover{
+    height: 400px;
+    width: 90px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+#floating_container:hover .message{
+    animation: message_out 0.3s linear;
+    animation-fill-mode: forwards;
+}
+#floating_container:hover .share{
+
+    animation: share_in 0.3s linear;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+}
+#floating_button{
+    width: var(--floating-button-width);
+    height: var(--floating-button-width);
+    border-radius: 50%;
+    background: white;
+    position: fixed;
+    bottom: 30px;
+    right:30px;
+    cursor: pointer;
+    box-shadow: 4px 6px 5px #000;
+}
+.share{
+    opacity: 0; /* original invisible*/
+    transform: rotateZ(-70deg); /*rotate in z-axis -70 */
+    transition: all 0.2s;
+    animation: share_out 0.2s;
+}
+
+.message{
+    animation: message_in 0.2s;
+    transition: all 0.2s;
+}
+
+@keyframes message_out{
+    from{opacity: 1; transform: rotateZ(0deg)}
+    to{opacity: 0; transform: rotateZ(180deg)}
+}
+
+@keyframes message_in{
+    from{opacity: 0; transform: rotateZ(180deg)}
+    to{opacity: 1; transform: rotateZ(0deg)}
+}
+
+@keyframes share_out{
+    from{opacity: 1; transform: rotateZ(0deg)}
+    to{opacity: 0; transform: rotateZ(-70deg)}
+}
+
+@keyframes share_in{
+    from{opacity: 0; transform: rotateZ(-70deg)}
+    to{opacity: 1; transform: rotateZ(0deg)}
+}
+
+
