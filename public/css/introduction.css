@@ -6,12 +6,9 @@
 }
 
 /**content**/
-#intro_content{
-    width: var(--width);
-    min-height: var(--intro_content-height);
-}
 
-.intro-content, .img-content{
+
+#intro-content, #img-content{
     background-color: aqua;
     height: var(--intro_content-height);
     top: var(--menu-height);
@@ -19,42 +16,39 @@
     
 }
 
-.intro-content{
+#intro-content{
     background-color: #262829;
     position: relative;
     
 }
-.intro-content p{
+#intro-content p{
     width: inherit;
     margin-left: 40px;
     margin-bottom: 20px;
-    margin-right: 40px;
+    margin-right: 50px;
    position: absolute;  
    top: 45%;                        
    transform: translate(0, -45%);
    color: white;
    font-size:2.1vw;
-
 }
 
-.intro-content #intro_btn{
+#intro-content #intro_btn{
     width: inherit;
-    margin-left: 40px;
+    padding-left: 40px;
     position: absolute;              
     top: 70%;                         
     transform: translate(0, -70%);
     background-color: #262829;
     padding-right: 30px;
-    
 }
 
 
-.img-content{
-    background-color: #1b1c1c;
-   
-}
+
 
 #intro_btn{
+    width: inherit;
+    overflow: hidden;
     display: flex;
     justify-content: flex-start;
 }
@@ -63,7 +57,7 @@
     height: 40px;
     border-radius: 25px;
     background-color: #262829;
-    width:200px;
+    width:180px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -85,6 +79,84 @@
     background-color: white;
 }
 
+#img-content{
+    background-color: #1b1c1c;
+    
+}
+
+#img-content img{
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin:auto;
+    margin-top:40%;
+    
+}
+
+#availability{
+    height: 50px;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#availability i{
+    color: greenyellow;
+    margin-right: 10px;
+}
+
+#intro-social{
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+}
+#intro-social i{
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+
+#intro-social a{
+    color:white;
+    text-decoration: none;
+   
+}
+
+#intro-social a:hover{
+    text-decoration: none;
+}
+
+.messenger:hover{
+    color:rgb(51, 80, 162) !important; 
+    text-shadow: 0 0 15px rgb(51, 80, 162);
+    transition: all 0.5s ease;
+}
+
+.twitter:hover{
+    color:rgb(70, 154, 234) !important;
+    text-shadow: 0 0 15px rgb(70, 154, 234);
+    transition: all 0.5s ease;
+}
+
+.linkedin:hover{
+    color: rgb(31, 94, 162) !important;
+    text-shadow: 0 0 15px rgb(31, 94, 162);
+    transition: all 0.5s ease;
+}
+
+.email:hover{
+    color: red !important;
+    text-shadow: 0 0 15px red;
+    transition: all 0.5s ease;
+}
+
+.phone:hover{
+    color: greenyellow !important;
+    text-shadow: 0 0 15px greenyellow;
+    transition: all 0.5s ease;
+}
 /*****menu****/
 
 #menu  {
@@ -117,9 +189,9 @@ nav{
 }
 
 .navbar-brand img{
-    margin-right: 20px;
-    width: 30px;
-    height: 30px;
+    margin-right: 3px;
+    width: 28px;
+    height: 28px;
     display: flex;
     flex-direction: column;
     justify-content: center;
